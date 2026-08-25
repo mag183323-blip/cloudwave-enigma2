@@ -1,0 +1,1 @@
+"""CloudWave Enigma2 plugin."""
