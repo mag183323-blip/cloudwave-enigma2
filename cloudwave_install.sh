@@ -4,7 +4,7 @@
 #   wget -qO- https://raw.githubusercontent.com/USER/REPO/main/cloudwave_install.sh | sh
 set -e
 
-MANIFEST_URL="https://raw.githubusercontent.com/USER/REPO/main/manifest.json"
+MANIFEST_URL="https://raw.githubusercontent.com/mag183323/cloudwave-enigma2/main/manifest.json"
 DEST="/usr/lib/enigma2/python/Plugins/Extensions/CloudWave"
 TMP="/tmp/cloudwave-install"
 
