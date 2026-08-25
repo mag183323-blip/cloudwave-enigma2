@@ -1,6 +1,6 @@
 {
-  "version": "0.2.2",
-  "url": "https://github.com/mag183323-blip/cloudwave-enigma2/releases/download/v0.2.2/cloudwave-enigma2.zip",
-  "sha256": "2f6963f520e8d1189a0cf877d5ba73c89514f8e36391cd9fe3b1fb09d4e828cc",
-  "notes": "إصلاح مشكلة الكراش وتحسين زر OK والواجهة"
+  "version": "0.3.0",
+  "url": "https://github.com/mag183323-blip/cloudwave-enigma2/releases/download/v0.3.0/cloudwave-enigma2.zip",
+  "sha256": "219ba4b80962dc8038288107d7ba84573bde90c901ea59ad979d68816d08076e",
+  "notes": "واجهة Full Screen وإضافة زر تحميل للروابط المباشرة"
 }
