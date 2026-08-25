@@ -4,7 +4,7 @@
 #   wget -qO- https://raw.githubusercontent.com/USER/REPO/main/cloudwave_install.sh | sh
 set -e
 
-MANIFEST_URL="https://raw.githubusercontent.com/mag183323/cloudwave-enigma2/main/manifest.json"
+MANIFEST_URL="https://raw.githubusercontent.com/USER/REPO/main/manifest.json"
 DEST="/usr/lib/enigma2/python/Plugins/Extensions/CloudWave"
 TMP="/tmp/cloudwave-install"
 
@@ -75,6 +75,25 @@ if os.path.isdir(destination):
     shutil.copytree(destination, backup)
     shutil.rmtree(destination)
 shutil.copytree(source, destination)
+# Persist the manifest URL so the plugin can check updates on every launch.
+settings = "/etc/enigma2/settings"
+setting = "config.plugins.cloudwave.update_manifest=" + manifest_url
+try:
+    lines = []
+    if os.path.exists(settings):
+        with open(settings, "r") as handle:
+            lines = handle.read().splitlines()
+    replaced = False
+    for index, line in enumerate(lines):
+        if line.startswith("config.plugins.cloudwave.update_manifest="):
+            lines[index] = setting
+            replaced = True
+    if not replaced:
+        lines.append(setting)
+    with open(settings, "w") as handle:
+        handle.write("\n".join(lines) + "\n")
+except (IOError, OSError) as error:
+    print("Warning: could not save update URL:", error)
 print("CloudWave %s installed successfully." % version)
 PY
 
