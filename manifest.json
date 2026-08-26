@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0",
-  "url": "https://github.com/mag183323-blip/cloudwave-enigma2/releases/download/v0.3.0/cloudwave-enigma2.zip",
-  "sha256": "219ba4b80962dc8038288107d7ba84573bde90c901ea59ad979d68816d08076e",
-  "notes": "واجهة Full Screen وإضافة زر تحميل للروابط المباشرة"
+  "version": "0.3.1",
+  "url": "https://github.com/mag183323-blip/cloudwave-enigma2/releases/download/v0.3.1/cloudwave-enigma2.zip",
+  "sha256": "a17d06a54dd1cd44dbf0ec72a43401f1c86cf63a285be6395938ead88ede4df2",
+  "notes": "إصلاح ظهور رسالة التحديث على OpenATV"
 }
